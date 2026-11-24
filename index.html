@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>プライバシーポリシーとサポート — ぜんぶJPEG</title>
+    <meta
+      name="description"
+      content="ぜんぶJPEGのプライバシーポリシーとサポート。写真の変換は端末の中だけで行い、開発者に送信されることはありません。"
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --ink: #111111;
+        --ink-body: rgba(0, 0, 0, 0.75);
+        --ink-label: rgba(0, 0, 0, 0.42);
+        --ink-faint: rgba(0, 0, 0, 0.38);
+        --line: rgba(0, 0, 0, 0.09);
+        --line-faint: rgba(0, 0, 0, 0.07);
+        --paper: rgba(0, 0, 0, 0.02);
+        --accent: #d97a00;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --ink: #f2f2f2;
+          --ink-body: rgba(255, 255, 255, 0.8);
+          --ink-label: rgba(255, 255, 255, 0.45);
+          --ink-faint: rgba(255, 255, 255, 0.4);
+          --line: rgba(255, 255, 255, 0.13);
+          --line-faint: rgba(255, 255, 255, 0.1);
+          --paper: rgba(255, 255, 255, 0.04);
+          --accent: #ff9f0a;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--ink-body);
+        font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+          "ヒラギノ角ゴシック", "Helvetica Neue", sans-serif;
+        font-size: 15px;
+        line-height: 2;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .wrap {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 64px 24px 96px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .brand img {
+        width: 52px;
+        height: 52px;
+        border-radius: 22.4%;
+        display: block;
+      }
+
+      .eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        color: var(--ink-label);
+        margin: 0;
+      }
+
+      .brand-name {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--ink);
+        line-height: 1.5;
+      }
+
+      .langs {
+        margin: 28px 0 0;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        color: var(--ink-faint);
+      }
+
+      .langs a {
+        color: var(--ink);
+      }
+
+      h1 {
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        color: var(--ink);
+        margin: 14px 0 0;
+      }
+
+      .updated {
+        font-size: 11.5px;
+        color: var(--ink-faint);
+        margin: 12px 0 0;
+      }
+
+      .lede {
+        margin: 34px 0 0;
+        padding-bottom: 34px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      section.doc {
+        padding-top: 52px;
+      }
+
+      h2 {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--ink);
+        margin: 44px 0 0;
+      }
+
+      h2 .num {
+        color: var(--ink-faint);
+        font-weight: 400;
+        margin-right: 10px;
+      }
+
+      p {
+        margin: 14px 0 0;
+      }
+
+      ul {
+        margin: 14px 0 0;
+        padding-left: 1.2em;
+      }
+
+      li {
+        margin: 6px 0 0;
+      }
+
+      strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--ink);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-color: rgba(128, 128, 128, 0.6);
+      }
+
+      a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+      }
+
+      .other-apps {
+        margin-top: 88px;
+        padding-top: 32px;
+        border-top: 1px solid var(--line);
+      }
+
+      .other-title {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        color: var(--ink-label);
+        margin: 0 0 20px;
+      }
+
+      .app-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .app-card {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 16px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        text-decoration: none;
+        color: inherit;
+        transition: border-color 0.15s ease, transform 0.15s ease;
+      }
+
+      .app-card:hover {
+        border-color: var(--accent);
+        transform: translateY(-1px);
+      }
+
+      .app-card-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 22.4%;
+        flex: none;
+        display: block;
+      }
+
+      .app-card-icon.is-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--ink-label);
+      }
+
+      .app-card-meta {
+        min-width: 0;
+      }
+
+      .app-card-name {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--ink);
+        line-height: 1.6;
+      }
+
+      .app-card-desc {
+        font-size: 12.5px;
+        color: var(--ink-faint);
+        line-height: 1.6;
+      }
+
+      .app-card-arrow {
+        margin-left: auto;
+        color: var(--ink-faint);
+        flex: none;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .app-card {
+          transition: none;
+        }
+      }
+
+      footer {
+        margin-top: 56px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line-faint);
+        font-size: 12px;
+        color: var(--ink-faint);
+      }
+    </style>
+  </head>
+    <body>
+    <div class="wrap">
+      <p class="eyebrow">ぜんぶJPEG</p>
+      <h1>プライバシーポリシーとサポート</h1>
+      <p class="updated">最終更新日：2026年11月24日</p>
+
+      <p class="lede">
+        「ぜんぶJPEG」（以下「本アプリ」）は、利用者のプライバシーを尊重し、以下の方針で情報を取り扱います。
+        本アプリは<strong>写真の変換を端末の中だけで行い、変換のために写真を開発者のサーバーへ送ることはありません</strong>。
+        アカウント登録も必要ありません。
+      </p>
+
+      <h2><span class="num">1</span>取り扱う情報</h2>
+      <p>本アプリが取り扱うのは、以下の情報です。</p>
+      <ul>
+        <li>利用者が変換のために選んだ<strong>写真・画像</strong>と、そこに含まれる情報（撮影日時、撮影場所などのメタデータ）</li>
+        <li>変換の<strong>設定</strong>（出力形式、画質、画像内の位置情報を残すか消すかの選択）</li>
+        <li><strong>購入の状態</strong>（枚数の制限を解除しているかどうか）</li>
+        <li>不具合を調べるための<strong>診断の記録</strong>（端末の機種と OS のバージョン、画像の形式・寸法・容量、位置情報が含まれているかどうか、変換と保存の結果など。画像そのものは含みません）</li>
+      </ul>
+      <p>
+        これらを本アプリが<strong>開発者に送信することはありません</strong>。本アプリには、開発者のサーバーと通信する仕組みも、
+        利用者を識別するアカウントもありません。
+      </p>
+      <p>
+        ただし、iCloud にある写真の取り出し、保存先（iCloud 写真や iCloud Drive など）との同期、
+        利用者が選んだ共有先への受け渡し、Apple を通じた購入の処理では、iOS やそれぞれのサービスが通信を行うことがあります。
+      </p>
+      <p>
+        診断の記録は端末内の本アプリの領域に保存され、次に本アプリ（または共有シートの本アプリの画面）を開いたときに、前回の分が消去されます。
+        テスト用の版（TestFlight）では、利用者が自分で操作したときに限り、この記録を画面で見てコピーできます。
+      </p>
+
+      <h2><span class="num">2</span>写真の処理と保存先</h2>
+      <p>
+        変換は<strong>すべて利用者の端末の中</strong>で行います。変換のために選んだ写真と変換後の画像は、
+        端末内の一時的な領域に置かれ、利用者が選んだ保存先（「写真」、「ファイル」、または共有先のアプリ）にだけ書き出されます。
+        元の写真を本アプリが変更したり削除したりすることはありません。
+      </p>
+      <p>
+        利用者が「ほかのアプリへ共有」を選んだ場合、変換後の画像は利用者が選んだ共有先に渡されます。
+        その先での取り扱いは、共有先のアプリやサービスの方針に従います。
+      </p>
+
+      <h2><span class="num">3</span>画像に含まれる位置情報</h2>
+      <p>
+        写真には、撮影した場所の情報が含まれていることがあります。本アプリでは、変換のときにこの情報を
+        <strong>削除するか、そのまま保持するかを利用者が選べます</strong>。本アプリは利用者が選んだとおりに処理し、
+        選んだ内容は端末内に記憶します（あとから変更できます）。
+      </p>
+      <p>
+        本アプリが<strong>端末の現在地を取得することはありません</strong>。位置情報の権限も要求しません。
+      </p>
+
+      <h2><span class="num">4</span>広告・解析・トラッキングについて</h2>
+      <p>
+        本アプリは<strong>広告を表示しません</strong>。また、広告・解析・トラッキングのための
+        外部 SDK（他社製のプログラム）を<strong>一切使用していません</strong>。
+      </p>
+      <ul>
+        <li>
+          <strong>情報を外部に送りません</strong> —
+          本アプリ自体が、利用状況の計測やクラッシュの報告を開発者や第三者に送ることはありません。
+          ただし、iOS の設定で「App デベロッパと共有」をオンにしている場合は、Apple が集計した統計やクラッシュ情報が
+          Apple を通じて開発者に提供されることがあります。テスト用の版（TestFlight）では、Apple の TestFlight
+          の方針に従い、クラッシュの記録や利用の情報が開発者に共有されます
+        </li>
+        <li>
+          <strong>トラッキングを行いません</strong> — iOS
+          のトラッキング許可（ATT）の確認画面は表示せず、広告 ID を用いた追跡も行いません
+        </li>
+      </ul>
+
+      <h2><span class="num">5</span>アプリ内課金について</h2>
+      <p>
+        本アプリは、1 回にまとめて変換できる枚数の制限を解除する、買い切りのアプリ内課金を提供しています。
+        自動更新のサブスクリプションはありません。
+      </p>
+      <p>
+        購入手続きは Apple の App Store を通じて行われます。
+        <strong>開発者がクレジットカード番号などの決済情報を受け取ることはありません</strong>。
+        決済に関する情報は <a href="https://www.apple.com/jp/legal/privacy/">Apple のプライバシーポリシー</a>に従って取り扱われます。
+        本アプリは、制限を解除しているかどうかを確かめるためだけに、端末内で Apple から購入の状態を受け取ります。
+        購入の状態を開発者に送ることはありません。
+      </p>
+
+      <h2><span class="num">6</span>権限について</h2>
+      <p>
+        本アプリが要求する権限は、変換した画像を「写真」に保存するときの<strong>写真への追加</strong>だけです。
+        この権限では、本アプリは写真ライブラリを閲覧できません。
+        変換する画像は、iOS の写真やファイルの選択画面、または共有シートを通じて、利用者が選んだものだけが本アプリに渡されます。
+        位置情報・カメラ・連絡先・通知の権限は要求しません。
+      </p>
+
+      <h2><span class="num">7</span>データの削除</h2>
+      <p>
+        本アプリを削除すると、本アプリの中の設定・一時的なファイル・診断の記録も削除されます
+        （作成済みの iOS のバックアップには残る場合があります）。
+        「写真」や「ファイル」に保存した変換後の画像や、共有先に渡した画像は、それぞれの場所で管理・削除してください。
+        写真や設定は本アプリから開発者に届かないため、削除をご依頼いただく必要はありません。
+      </p>
+
+      <h2><span class="num">8</span>子どものプライバシー</h2>
+      <p>
+        本アプリは特に子どもを対象としていません。13
+        歳未満の方が利用する場合は、保護者の管理下でご利用ください。
+      </p>
+
+      <h2><span class="num">9</span>ポリシーの変更</h2>
+      <p>
+        本ポリシーは、必要に応じて改定されることがあります。重要な変更がある場合は、本ページにて告知します。
+      </p>
+
+      <h2 id="support"><span class="num">10</span>サポート・お問い合わせ</h2>
+      <p>
+        本アプリの使い方、不具合、購入の復元、本ポリシーに関するご質問は、以下までご連絡ください。<br />
+        <a href="mailto:akagamisora@gmail.com">akagamisora@gmail.com</a>
+      </p>
+      <ul>
+        <li><strong>購入したのに制限が解除されない</strong> — アプリの「購入・復元」から「購入を復元」をお試しください。購入したときと同じ Apple Account でサインインしている必要があります</li>
+        <li><strong>変換できない画像がある</strong> — 画像の形式（HEIC、DNG など）と、お使いの iPhone の機種・iOS のバージョンを添えてお知らせください</li>
+      </ul>
+      <p>
+        お送りいただいたメールアドレスと内容は、お返事と改善のためにのみ使用し、法令に基づく場合を除き第三者に提供しません。
+        メールは Google の Gmail で受信し、対応に必要な期間保管します。
+        ご自身の情報の開示・訂正・削除のご希望も、上記アドレスで受け付けます。
+      </p>
+      <p>運営者：Sora Akagami（個人開発者）</p>
+
+      <section class="other-apps">
+        <h2 class="other-title">OTHER APPS BY AKAGAMISORA</h2>
+        <div class="app-list">
+          <a
+            class="app-card"
+            href="https://akagamisora.github.io/doitnow-privacy/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="app-card-icon"
+              src="https://akagamisora.github.io/doitnow-privacy/app-icon.png"
+              alt=""
+            />
+            <div class="app-card-meta">
+              <div class="app-card-name">Do It Now ! ー 便利じゃない、意味のあるタスク</div>
+              <div class="app-card-desc">36時間で消える、3つだけ。</div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
+          <a
+            class="app-card"
+            href="https://akagamisora.github.io/dakke-privacy/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="app-card-icon"
+              src="https://akagamisora.github.io/dakke-privacy/app-icon.png"
+              alt=""
+            />
+            <div class="app-card-meta">
+              <div class="app-card-name">Dakke</div>
+              <div class="app-card-desc">「あの人、誰だっけ」をなくす、顔から引く出会いの記録</div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
+          <a
+            class="app-card"
+            href="https://akagamisora.github.io/hitokoma-privacy/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="app-card-icon"
+              src="https://akagamisora.github.io/hitokoma-privacy/app-icon.png"
+              alt=""
+            />
+            <div class="app-card-meta">
+              <div class="app-card-name">ひとこま - 写真と一言の日記</div>
+              <div class="app-card-desc">写真 1 枚と一言、地図で振り返るフォトログ</div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
+          <a
+            class="app-card"
+            href="https://akagamisora.github.io/mannaka-privacy/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="app-card-icon"
+              src="https://akagamisora.github.io/mannaka-privacy/app-icon.png"
+              alt=""
+            />
+            <div class="app-card-meta">
+              <div class="app-card-name">まんなか - 集合駅を公平に提案</div>
+              <div class="app-card-desc">参加者の最寄り駅から、「ちょうど真ん中」の集合駅を提案</div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
+          <a
+            class="app-card"
+            href="https://akagamisora.github.io/zutto-minesweeper-privacy/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="app-card-icon"
+              src="https://akagamisora.github.io/zutto-minesweeper-privacy/app-icon.png"
+              alt=""
+            />
+            <div class="app-card-meta">
+              <div class="app-card-name">ずっとマインスイーパー</div>
+              <div class="app-card-desc">推測なしで必ず解ける、終わらない 9×9 マインスイーパー</div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
+          <a
+            class="app-card"
+            href="https://akagamisora.github.io/gamanchokin-privacy/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="app-card-icon is-text" aria-hidden="true">貯</span>
+            <div class="app-card-meta">
+              <div class="app-card-name">がまん貯金 - 我慢した分だけ貯めてご褒美</div>
+              <div class="app-card-desc">我慢して浮いたお金を貯めて、ごほうびに使う</div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
+          <a
+            class="app-card"
+            href="https://akagamisora.github.io/hottoku-privacy/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="app-card-icon"
+              src="https://akagamisora.github.io/hottoku-privacy/app-icon.png"
+              alt=""
+            />
+            <div class="app-card-meta">
+              <div class="app-card-name">ほっとく - 休憩タイマーと手放した記録</div>
+              <div class="app-card-desc">休むと決めたら押すだけ。休んだ時間と手放したことが溜まる</div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
+          <a
+            class="app-card"
+            href="https://akagamisora.github.io/shitsukoi-alarm-privacy/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="app-card-icon"
+              src="https://akagamisora.github.io/shitsukoi-alarm-privacy/app-icon.png"
+              alt=""
+            />
+            <div class="app-card-meta">
+              <div class="app-card-name">しつこいアラーム - 締切まで何度も鳴らす</div>
+              <div class="app-card-desc">
+                間に合わせたい時刻まで、その手前から何度でも鳴らす
+              </div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
+        </div>
+      </section>
+
+      <footer>ぜんぶJPEG — HEIC・RAW を、広告なしでまとめて JPEG に</footer>
+    </div>
+  </body>
+</html>
